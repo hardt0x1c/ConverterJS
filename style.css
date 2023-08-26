@@ -1,0 +1,40 @@
+body {
+    background-image: url(b315039b22b8687834d987298299615d.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-back {
+    background-color: #fcfcfc;
+    box-shadow:0 0 10px #000;
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow:0 0 10px #000;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.form-select {
+    margin-bottom: 5%;
+}
+
+.btn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.checks {
+    margin-top: 5%;
+}

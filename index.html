@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container main d-flex justify-content-center align-items-center">
+        <div class="row main-back">
+            <div class="current_price row text-center">
+                <div class="col-xs-6">
+                    <p class="usd valute"></p>
+                    <p class="eur valute"></p>
+                </div>
+            </div>
+            <div class="row converter text-center">
+                <div class="col-xs-6">
+                    <select class="form-select form-select-lg" aria-label="Large select" id="currencySelect">
+                        <option selected=''>Выберите валюту</option>
+                     </select>
+                     <label for="formControlInput" class="form-label">Введите сумму</label>
+                     <input type="email" class="form-control" id="amountCurrency" placeholder="0">
+                     <div class="checks">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault" value="from">
+                            <label class="form-check-label" for="inlineRadioDefault">В рубли</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked" checked="" value="to">
+                            <label class="form-check-label" for="inlineRadioChecked">Из рублей</label>
+                        </div>
+                     </div>
+                     <button class="btn btn-primary" type="button" id="btn-calculate">Посчитать</button>
+                     <p class="converter-p"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
